@@ -17,14 +17,12 @@
     .row{
         width: 100%;
     }
-    p{
+    .exe{
         width: 90%;
-        border: 1px solid black;
         margin-left: auto;
         margin-right: auto;
         color: white;
         background-color: coral;
-        height: 150px;
     }
     @media (min-width:1200px){
         .l-1{
@@ -39,20 +37,25 @@
             border: 1px solid green;
             width: 50%;
         }
+    .ttl{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }    
 
     }
 </style>
 <body>
     <h1>Responsive Layout</h1>
     <div class="row">
-        <div class="l-1 m-1"><p>Item 1</p></div>
-        <div class="l-1 m-1"><p>Item 2</p></div>
-        <div class="l-1 m-1"><p>Item 3</p></div>
-        <div class="l-1 m-1"><p>Item 4</p></div>
-        <div class="l-1 m-1"><p>Item 5</p></div>
-        <div class="l-1 m-1"><p>Item 6</p></div>
-        <div class="l-1 m-1"><p>Item 7</p></div>
-        <div class="l-1 m-1"><p>Item 8</p></div>
+        <div class="l-1 m-1"><p class="exe">Item 1</p><p class="ttl">Chicken</p></div>
+        <div class="l-1 m-1"><p class="exe">Item 2</p></div>
+        <div class="l-1 m-1"><p class="exe">Item 3</p></div>
+        <div class="l-1 m-1"><p class="exe">Item 4</p></div>
+        <div class="l-1 m-1"><p class="exe">Item 5</p></div>
+        <div class="l-1 m-1"><p class="exe">Item 6</p></div>
+        <div class="l-1 m-1"><p class="exe">Item 7</p></div>
+        <div class="l-1 m-1"><p class="exe">Item 8</p></div>
     </div>
 </body>
 </html>

@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .row{
+            width: 100%;
+        }
+        p{
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            margin: 10px;
+            color: rgb(224, 83, 18);
+        }
+        div{
+            margin-bottom: 10px;
+        }
+        #p1{
+            background-color: yellow;
+            float: left;
+        }
+        #p2{
+            background-color: blueviolet;
+            float: right;
+        }
+        #p3{
+            background-color: brown;
+            clear: left;
+            float: left;
+        }
+        #p4{
+            background-color: skyblue;
+            float: right;
+        }
+        h1{
+            text-align: center;
+        }
+        section{
+            clear: both;
+        }
+        @media (min-width:1200px){
+            .lg-1{
+                float: left;
+                width: 50%;
+            }
+        }
+        @media (min-width:992px) and (max-width:1199px){
+            .mg-1{
+                float: left;
+                width: 100%;
+            }
+        }
+        .item{
+            margin: 10px;
+            border:1px solid black;
+            background-color: springgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>FLOAT</h1>
+    <div class="row">
+    <div class="lg-1 mg-1">
+        <div class="item">
+        <p id="p1">P1</p>
+        <p id="p2">P2</p>
+        <p id="p3">P3</p>
+        <p id="p4">P4</p>
+        <section>This is a regular content</section>
+        </div>
+    </div>
+    <div class="lg-1 mg-1">
+        <div class="item">
+        <p id="p1">P1</p>
+        <p id="p2">P2</p>
+        <p id="p3">P3</p>
+        <p id="p4">P4</p>
+        <section>This is a regular content</section>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
